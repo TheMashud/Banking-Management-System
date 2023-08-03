@@ -134,11 +134,14 @@ class Admin:
 
 islami_bank = Bank("Islami Bank", 'Chittagong')
 
-opi = User('Mashudul joque', '23@miql.com', 'ctg', 1234)
+opi = User('Mashudul joque', '2345arham@gmail.com', 'ctg', 1234)
 opi.deposit(islami_bank, 30000)
 print(opi.Cheak_balance())
 opi.withdrawal_amount(islami_bank, 2000)
 print(opi.Cheak_balance())
 opi.take_loan(islami_bank, 20000)
 print(opi.Cheak_balance())
+
+print(islami_bank.total_available_balance())
+print(islami_bank.total_loan_amount())
 
